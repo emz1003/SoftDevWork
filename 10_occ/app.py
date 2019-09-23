@@ -16,7 +16,7 @@ occupationsArray = []
 
 for line in lines:
     parsed = line.rsplit(",", 2) #allows me to split from the rightmost comma of a line - avoids issue of an occupation having a comma
-    jobClass = parsed[0]
+    jobClass = parsed[0].strip("\"")
     percentage = float(parsed[1]) #must be stored as a number per instructions
     link = parsed[2][:-1]
     occupationsDict[jobClass] = [percentage, link]
