@@ -6,6 +6,7 @@
 from flask import Flask
 from flask import request
 from flask import render_template
+from flask import session
 
 app = Flask(__name__)  # Create
 
@@ -22,6 +23,7 @@ def yeet():
 def authenticate():
     if request.method == 'POST':
         # Use request.form for POST request
+        session['username'] = request.form.get('username')
         return render_template("authentication.html", username=request.form['username'], request=request.method)
 #    print("\n" * 3)
 #
