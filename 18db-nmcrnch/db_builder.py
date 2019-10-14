@@ -21,7 +21,7 @@ def CSVtoTable(csv_name):
     lines = f.readlines()
     col = lines[0].strip().split(',') # list of column names
 
-    command = "CREATE TABLE IF NOT EXISTS {} ( {} TEXT, {} INTEGER, {} INTEGER PRIMARY KEY )".format(table_name, col[0], col[1], col[2]) #create table
+    command = "CREATE TABLE IF NOT EXISTS {} ( {} TEXT, {} INTEGER, {} INTEGER)".format(table_name, col[0], col[1], col[2]) #create table
     c.execute(command)  # run SQL statement
     for row in reader:
         command = 'INSERT OR REPLACE INTO {} ( {}, {}, {} ) VALUES (\"{}\", {}, {});\n'
