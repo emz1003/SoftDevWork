@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <h1>Bootstrap features!</h1>
+
+    <button type="button" class="btn btn-primary btn-lg active"> LARGE BUTTON</button>
+    <br> A spinner-grow button <br>
+    <button class="btn btn-primary" disabled>
+        <span class="spinner-grow spinner-grow-sm"></span>
+        Loading..
+    </button>
+    <br> Your content is loading... <br>
+    <div class="progress">
+        <div class="progress-bar" style="width:70%"> 70% full. Just you wait!</div>
+    </div>
+
+    <div class="container">
+        <h2>Alert! Unable to load</h2>
+        <div class="alert alert-danger">
+            <h4 class="alert-heading">Failure</h4>
+        </div>
+    </div>
+
+
+        <p>stretchy, fits any word!</p>
+        <div class="d-flex bg-light" style="height:150px">
+            <div class="p-2 border"> Boot </div>
+            <div class="p-2 border align-self-stretch"> strap </div>
+            <div class="p-2 border"> javascript</div>
+        </div>
+        <br>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <p class="bg-primary text-white">primary.</p>
+    <p class="bg-success text-white">this color is for success</p>
+    <p class="bg-info text-white"> can you tell that this indicates info?</p>
+    <p class="bg-warning text-white">warning but this thing is starting to look like a rainbow</p>
+    <p class="bg-danger text-white"> why is danger always red? </p>
+    <p class="bg-secondary text-white"> secondary color huh </p>
+    <p class="bg-dark text-white"> this is just dark </p>
+    <p class="bg-light text-dark"> this should be lighter? </p>
+
+    <div class="container">
+        <h2>Hansel and Gretel left some Breadcrumbs</h2>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Candy House</a></li>
+            <li class="breadcrumb-item"><a href="#">Black Forest (cake?) </a></li>
+            <li class="breadcrumb-item active">Rome</li>
+        </ul>
+    </div>
+    <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Dropdown button
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Ohh lala where will this take you? </a>
+            <a class="dropdown-item" href="#">Choose me!</a>
+            <a class="dropdown-item" href="#">No! Choose me!</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Try to log in! It won't work, but it looks better than anything we've done so far! </h2>
+        <form action="#" class="was-validated">
+            <div class="form-group" style="position:relative">
+                <label for="uname">Username:</label>
+                <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+                <div class="invalid-tooltip">Please fill out this field.</div>
+            </div>
+            <div class="form-group mt-5" style="position:relative">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                <div class="valid-tooltip">Valid.</div>
+                <div class="invalid-tooltip">Please fill out this field.</div>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary mt-2">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
