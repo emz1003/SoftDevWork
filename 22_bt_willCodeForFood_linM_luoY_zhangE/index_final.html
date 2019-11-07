@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Bootstrap Demo</title>
+    <style>
+      .carousel, img{
+          display: block;
+          width: 800px;
+          height: 550px;
+          margin: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <br><br>
+    <h1 style = 'text-align:center;'>Bootstrap features!</h1>
+    <h4 style = 'text-align:center;'>
+      Team WillCodeForFood<br>
+      Michael Lin, Yaru Luo, Emily Zhang<br>
+      SoftDev1 pd01
+    </h4>
+
+    <br><hr><br>
+
+    <div class="container">
+      <h2>Navigation Bars</h2>
+      <h5>Class: <code>navbar</code></h5>
+      <p>With Bootstrap, you can create a responsive navigation bar that can extend or collapse depending on the screen size.</p>
+      <h5>Standard NavBar</h5>
+      <nav class="navbar navbar-expand-sm bg-light">
+	<ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link 1</a>
+          </li>
+	  <li class="nav-item">
+            <a class="nav-link" href="#">Link 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link 3</a>
+          </li>
+	</ul>
+      </nav>
+      <p>NavBars can also have dropdown menus.</p>
+      <nav class="navbar navbar-expand-sm bg-light">
+	<ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link 2</a>
+          </li>
+	  <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+	  </li>
+	</ul>
+      </nav>
+    </div>
+
+    <br><hr><br>
+
+    <div class="container">
+      <h2>Typography</h2>
+      <h5>Class: <code>text-muted, text-primary, text-success, etc.</code></h5>
+      <p>Contextal classes are used to provide "meaning through colors".</p>
+      <p class="bg-primary text-white">primary.</p>
+      <p class="bg-success text-white">this color is for success</p>
+      <p class="bg-info text-white"> can you tell that this indicates info?</p>
+      <p class="bg-warning text-white">warning but this thing is starting to look like a rainbow</p>
+      <p class="bg-danger text-white"> why is danger always red? </p>
+      <p class="bg-secondary text-white"> secondary color huh </p>
+      <p class="bg-dark text-white"> this is just dark </p>
+      <p class="bg-light text-dark"> this should be lighter? </p>
+    </div>
+    
+    <br><hr><br>
+
+    <div class="container">
+      <h2>Buttons</h2>
+      <h5>Class: <code>btn</code></h5>
+      <p>Bootstrap also gives you different predefined buttons.</p>
+      <button type="button" class="btn btn-primary btn-lg active"> LARGE BUTTON</button><br><br>
+      Outline buttons:<br>
+      <button type="button" class="btn btn-outline-primary">Primary</button>
+      <button type="button" class="btn btn-outline-secondary">Secondary</button>
+      <button type="button" class="btn btn-outline-success">Success</button>
+      <button type="button" class="btn btn-outline-danger">Danger</button>
+      <button type="button" class="btn btn-outline-warning">Warning</button>
+      <button type="button" class="btn btn-outline-info">Info</button>
+      <button type="button" class="btn btn-outline-light">Light</button>
+      <button type="button" class="btn btn-outline-dark">Dark</button> 
+      <br><br>Dropdown button:<br>
+      <div class="dropdown">
+	<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+	  Dropdown button
+	</button>
+	<div class="dropdown-menu">
+	  <a class="dropdown-item" href="#">Ohh lala where will this take you? </a>
+	  <a class="dropdown-item" href="#">Choose me!</a>
+	  <a class="dropdown-item" href="#">No! Choose me!</a>
+	</div>
+      </div>
+      <br>
+      Button group:<br>
+      <div class="btn-group">
+	<button type="button" class="btn btn-primary">Apple</button>
+	<button type="button" class="btn btn-primary">Samsung</button>
+	<button type="button" class="btn btn-primary">Sony</button>
+      </div>
+      <br><br> Spinner-grow button: <br>
+      <button class="btn btn-primary" disabled>
+	<span class="spinner-grow spinner-grow-sm"></span>
+	Loading..
+      </button>
+      <br> Your content is loading... <br>
+      <div class="progress">
+	<div class="progress-bar" style="width:70%"> 70% full. Just you wait!</div>
+      </div>
+    </div>
+
+    <br><hr><br>
+
+    <div class="container">
+      <h2>Alert! Unable to load.</h2>
+      <h5>Class: <code>alert</code></h5>
+      <p>Allow you to provide contextual feedback messages for user actions.
+	<div class="container">
+	  <div class="alert alert-danger">
+            <h4 class="alert-heading">Failure</h4>
+	  </div>
+	</div>
+    </div>
+
+    <br><hr><br>
+
+    <div class="container">
+      <h2>Flex Box</h2>
+      <h5>Class: <code>d-flex</code></h5>
+      <p>Adjusts the size of the rows and columns to the length of the words.</p>
+      <div class="d-flex bg-light">
+	<div class="p-2 border"> Im a flexbox </div>
+	<div class="p-2 border align-self-stretch"> And me </div>
+	<div class="p-2 border"> Too</div>
+      </div>
+      <br><p>Can also be justified to change the alignment:</p>
+      <div class="d-flex bg-light justify-content-start ">
+	<div class="p-2 border">Flex item 1</div>
+	<div class="p-2 border">Flex item 2</div>
+	<div class="p-2 border">Flex item 3</div>
+      </div><br>
+      <div class="d-flex bg-light justify-content-end">
+	<div class="p-2 border">Flex item 1</div>
+	<div class="p-2 border">Flex item 2</div>
+	<div class="p-2 border">Flex item 3</div>
+      </div><br>
+      <div class="d-flex bg-light justify-content-center">
+	<div class="p-2 border">Flex item 1</div>
+	<div class="p-2 border">Flex item 2</div>
+	<div class="p-2 border">Flex item 3</div>
+      </div><br>
+      <div class="d-flex bg-light justify-content-between">
+	<div class="p-2 border">Flex item 1</div>
+	<div class="p-2 border">Flex item 2</div>
+	<div class="p-2 border">Flex item 3</div>
+      </div><br>
+      <div class="d-flex bg-light justify-content-around">
+	<div class="p-2 border">Flex item 1</div>
+	<div class="p-2 border">Flex item 2</div>
+	<div class="p-2 border">Flex item 3</div>
+      </div>
+    </div>
+    
+    <br><hr><br>
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+<div class="container">
+  <h2>Breadcrumbs</h2>
+  <h5>Class: <code>breadcrumb</code></h5>
+  <p>A breadcrumb navigation provide links back to each previous page the user navigated through, and shows the user's current location in a website.</p>
+  <div class="container">
+    <h3>Hansel and Gretel left some Breadcrumbs</h3>
+    <ul class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item"><a href="#">Candy House</a></li>
+      <li class="breadcrumb-item"><a href="#">Black Forest (cake?) </a></li>
+      <li class="breadcrumb-item active">Rome</li>
+    </ul>
+  </div>
+
+  <br><hr>
+
+  <div class="container">
+    <h2>Try to log in!</h2>
+    <h5>Class: <code>form-group</code></h5>
+    <p>Control things like if all fields are validated.</p>
+    <form action="#" class="was-validated">
+      <div class="form-group" style="position:relative">
+	<label for="uname">Username:</label>
+	<input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+	<div class="invalid-tooltip">Please fill out this field.</div>
+      </div>
+      <div class="form-group mt-5" style="position:relative">
+	<label for="pwd">Password:</label>
+	<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+	<div class="valid-tooltip">Valid.</div>
+	<div class="invalid-tooltip">Please fill out this field.</div>
+      </div>
+      <br>
+      <button type="submit" class="btn btn-primary mt-2">Submit</button>
+    </form>
+  </div>
+
+  <br><hr><br>
+
+  <div class="container">
+    <h2>Carousel</h2>
+    <h5>Class: <code>carousel slide</code></h5>
+    <p>Show off some nice pictures.</p>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+	<li data-target="#demo" data-slide-to="0" class="active"></li>
+	<li data-target="#demo" data-slide-to="1"></li>
+	<li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+	<div id = "img" class="carousel-item active">
+	  <img src="https://live.staticflickr.com/1725/40581463180_a7e4d20f5c_b.jpg">
+	</div>
+	<div id = "img" class="carousel-item">
+	  <img src="https://media.daysoftheyear.com/20171223132940/double-cheeseburger-day.jpg">
+	</div>
+	<div id = "img" class="carousel-item">
+	  <img src="https://www.thespruceeats.com/thmb/RuiS8PlPaUkJFbrH8skujr90Q8A=/1500x1000/filters:fill(auto,1)/terris-crispy-fried-chicken-legs-3056879-10_preview-5b05ec40a474be00362260d7.jpeg">
+	</div>
+      </div>
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+	<span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+	<span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+    <br><hr><br>
+
+    <h6>sources: https://getbootstrap.com/docs, https://www.w3schools.com/bootstrap</h6>
+    <br><br>
+
+</body>
+
+<style>
+  .body{
+      text-align: center;
+  }
+</style>
+
+</html>
