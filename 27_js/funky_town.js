@@ -1,7 +1,8 @@
 var names = [
     "Emily",
     "Yifan",
-    "Jackie"
+    "Jackie",
+    "Tiffany"
 ];
 
 var fxn = function() {
