@@ -34,7 +34,15 @@ var randomStudent = function() {
     return names[Math.floor(Math.random() * names.length)];
 }
 
-document.getElementById("fact").addEventListener("click", fact(5));
-document.getElementById("fib").addEventListener("click", fib(5));
-document.getElementById("gcd").addEventListener("click", gcd(10, 8));
-document.getElementById("rand").addEventListener("click", randomStudent());
+document.getElementById("fact").addEventListener("click", function () {
+    console.log(fact(5))
+});
+document.getElementById("fib").addEventListener("click", function () {
+    console.log(fib(5))
+});
+document.getElementById("gcd").addEventListener("click", function () {
+    console.log(gcd(10, 8))
+});
+document.getElementById("rand").addEventListener("click", function () {
+    console.log(randomStudent())
+});
