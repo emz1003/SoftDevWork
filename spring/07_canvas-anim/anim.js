@@ -2,16 +2,17 @@ var c = document.getElementById("slate");
 var ctx = c.getContext("2d");
 var radius = 0;
 var value = 0;
+var id;
 
 document.getElementById("start").addEventListener("click", function (e) {
   circle();
-});
+  id = window.requestAnimationFrame(circle);
+  window.cancelAnimationFrame(id);
+})
 
-
-document.getElementById("clear").addEventListener("click", function () {
-    console.log("clear");
-    ctx.clearRect(0, 0, c.height, c.width);
-});
+document.getElementById("stop").addEventListener("click", function (e) {
+  window.cancelAnimationFrame(id);
+})
 
 function circle () {
   ctx.beginPath();
@@ -28,4 +29,5 @@ function circle () {
     if (radius <= 0){
       value = 1;
     }
-}
+    id = window.requestAnimationFrame(circle);
+};
