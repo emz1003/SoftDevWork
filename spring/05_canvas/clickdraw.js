@@ -42,3 +42,9 @@ var draw = function() {
     ctx.fillRect(event.clientX, event.clientY, 150, 100);
     console.log("draw");
 }
+/*
+e.preventDefault();
+ctx.beginPath();
+e.offsetX
+e.offsetY
+*/
