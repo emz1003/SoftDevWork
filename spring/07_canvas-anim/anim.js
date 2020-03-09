@@ -5,8 +5,8 @@ var value = 0;
 var id;
 
 document.getElementById("start").addEventListener("click", function (e) {
-  circle();
   id = window.requestAnimationFrame(circle);
+  circle();
   window.cancelAnimationFrame(id);
 })
 
