@@ -10,5 +10,5 @@ client = MongoClient()
 client = MongoClient('localhost', 27017)
 db = client.pokedex
 collection = db.pokemon
-pokemon = file.read()
-db.pokemon.insert_many(pokemon)
+mons = file.read()
+db.pokemon.insert_many(mons)
