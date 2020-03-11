@@ -3,6 +3,7 @@
 # K09 -- Yummy Mongo Py
 # 2020-02-28
 from pymongo import MongoClient
+import json
 
 # All restaurants in a specified borough.
 # All restaurants in a specified zip code.
@@ -15,8 +16,10 @@ client = MongoClient()
 client = MongoClient('localhost', 27017)
 db = client.primer_db
 collection = db.restaurants
-rsrts = file.read()
-db.restaurants.insert_many(rsrts)
+rsrts = file.readline()
+while rsrts != None: 
+    rsrt = json.loads(rsrts)
+    db.restaurants.insert_one(rsrt)
 for rsrt in db.restaurants.find({"borough": "manhattan"}):
     pprint.pprint(rsrt)
 for rsrt in db.restaurants.find({"zipcode": "10462"}):
