@@ -13,4 +13,4 @@ db = client.pokedex
 collection = db.pokemon
 mons = file.readlines()
 for line in mons:
-    db.pokemon.insert_many(json.loads(line))
+    db.pokemon.insert_one(json.loads(line))
