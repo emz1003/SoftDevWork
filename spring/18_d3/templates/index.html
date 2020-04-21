@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BitCoin Data</title>
+    <h3> Bitcoin Currency Volume Over Time</h3>
+    <script src="https://d3js.org/d3.v5.min.js" charset="utf-8"></script>
+</head>
+<body>
+    <button id="render"> Render </button>
+    <br>
+    <svg id="chart">
+    </svg>
+    <br>
+    <button id="transition">Bruh Moment</button>
+    Transitions into a moving average representation of our bitcoin data
+    <script>data = {{ data|safe }}</script>
+    <script src="{{url_for('static', filename='charting.js')}}"></script>
+</body>
+</html>
